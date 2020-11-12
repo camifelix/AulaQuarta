@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main(void) {
+  float n1, n2, resultado;
+  int operacao;
+
+  printf ("Digite o Primeiro Valor: ");
+  scanf("%f", &n1);
+
+  printf ("Digite o Segundo Valor: ");
+  scanf ("%f", &n2);
+
+  printf ("\nEscolha uma Operação \n");
+  printf("\n1 - Adição\n");
+  printf("2 - Subtração\n");
+  printf("3 - Divisão\n");
+  printf("4 - Multiplicação\n\n");
+  printf("Escolha um número: ");
+  scanf("%d", &operacao);
+
+  switch (operacao) {
+    case 1: resultado = n1 + n2; break;
+    case 2: resultado = n1 - n2; break;
+    case 3: resultado = n1 / n2; break;
+    case 4: resultado = n1 * n2; break;
+    
+    default: printf("Valor incorreto, digite um número válido!! \n");
+  }
+   
+    if (operacao >= 1 && operacao <=4)
+      printf("Resultado = %.0f\n", resultado);
+
+  return 0;
+}
