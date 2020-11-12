@@ -10,12 +10,12 @@ int main(void) {
   printf ("Digite o Segundo Valor: ");
   scanf ("%f", &n2);
 
-  printf ("\nEscolha uma Operação \n");
-  printf("\n1 - Adição\n");
-  printf("2 - Subtração\n");
-  printf("3 - Divisão\n");
-  printf("4 - Multiplicação\n\n");
-  printf("Escolha um número: ");
+  printf ("\nEscolha uma OperaÃ§Ã£o \n");
+  printf("\n1 - AdiÃ§Ã£o\n");
+  printf("2 - SubtraÃ§Ã£o\n");
+  printf("3 - DivisÃ£o\n");
+  printf("4 - MultiplicaÃ§Ã£o\n\n");
+  printf("Escolha um nÃºmero: ");
   scanf("%d", &operacao);
 
   switch (operacao) {
@@ -24,7 +24,7 @@ int main(void) {
     case 3: resultado = n1 / n2; break;
     case 4: resultado = n1 * n2; break;
     
-    default: printf("Valor incorreto, digite um número válido!! \n");
+    default: printf("Valor incorreto, digite um nÃºmero vÃ¡lido!! \n");
   }
    
     if (operacao >= 1 && operacao <=4)
